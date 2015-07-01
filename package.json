@@ -1,0 +1,28 @@
+{
+  "name": "app-context-express",
+  "description": "express initializer for app-context",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mattinsler/app-context-express",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattinsler/app-context-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattinsler/app-context-express/issues"
+  },
+  "main": "lib/app-context-express",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "express": "^4.13.0",
+    "q": "^1.4.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "express",
+    "app-context",
+    "app-context-initialize"
+  ]
+}
