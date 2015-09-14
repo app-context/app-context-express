@@ -1,28 +1,25 @@
 {
   "name": "app-context-express",
-  "description": "express initializer for app-context",
-  "version": "0.0.1",
-  "homepage": "https://github.com/mattinsler/app-context-express",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/mattinsler/app-context-express.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mattinsler/app-context-express/issues"
-  },
-  "main": "lib/app-context-express",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "dependencies": {
-    "chalk": "^1.0.0",
-    "express": "^4.13.0",
-    "q": "^1.4.1"
-  },
-  "devDependencies": {},
+  "version": "1.0.0",
+  "description": "Express initializer for app-context",
   "keywords": [
-    "express",
     "app-context",
-    "app-context-initialize"
-  ]
+    "express"
+  ],
+  "homepage": "https://github.com/app-context/app-context-express",
+  "bugs": {
+    "url": "https://github.com/app-context/app-context-express/issues"
+  },
+  "license": "MIT",
+  "author": "Matt Insler <matt.insler@gmail.com>",
+  "main": "lib/app-context-express",
+  "repository": "app-context/app-context-express",
+  "dependencies": {
+    "bluebird": "2.10.0",
+    "body-parser": "1.13.3",
+    "chalk": "1.1.1",
+    "express": "4.13.3",
+    "method-override": "2.3.5",
+    "morgan": "1.6.1"
+  }
 }
