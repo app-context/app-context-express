@@ -41,19 +41,22 @@ module.exports = function() {
 
 ## Options
 
-**root** - directory to find execute scripts in (defaults to the project root)
-**execute** - string or array of scripts to run, in order, to setup the express server (defaults to `initialize`, `middleware`, `router`)
+**`root`** - directory to find execute scripts in (defaults to the project root)
 
-**port** - port for the HTTP server to listen on (defaults to `process.env.PORT` or `3000`)
+**`execute`** - string or array of scripts to run, in order, to setup the express server (defaults to `initialize`, `middleware`, `router`)
+
+**`port`** - port for the HTTP server to listen on (defaults to `process.env.PORT` or `3000`)
 
 #### SSL Options
 
 An HTTPS server will be started if you include either a key and cert, or a pfx
 file.
 
-**ssl.port** - port for the HTTPS server to listen on (defaults to `process.env.HTTPS_PORT` or **port** + 1)
-**ssl.key**, **ssl.cert** - path of the key and certificate files relative to project root
-**ssl.pfx** - path of the pfx file relative to project root
+**`ssl.port`** - port for the HTTPS server to listen on (defaults to `process.env.HTTPS_PORT` or **`port`** + 1)
+
+**`ssl.key`**, **`ssl.cert`** - path of the key and certificate files relative to project root
+
+**`ssl.pfx`** - path of the pfx file relative to project root
 
 ## Discussion
 
