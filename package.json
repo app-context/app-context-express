@@ -15,7 +15,8 @@
   "main": "lib/app-context-express",
   "repository": "app-context/app-context-express",
   "scripts": {
-    "build": "rm -rf lib; babel src -d lib"
+    "build": "rm -rf lib; babel src -d lib",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@mattinsler/es6require": "0.0.3",
