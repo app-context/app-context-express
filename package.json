@@ -1,6 +1,6 @@
 {
   "name": "app-context-express",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Express initializer for app-context",
   "keywords": [
     "app-context",

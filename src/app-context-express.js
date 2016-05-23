@@ -80,9 +80,10 @@ function init(context, opts, steps) {
 
 function defaultMiddleware(opts) {
   try {
-    require.resolve(opts.root, 'middleware');
+    require.resolve(path.resolve(opts.root, 'middleware'));
     return 'middleware';
-  } catch (err) {}
+  } catch (err) {
+  }
 
   return function(app, context) {
     const morgan = require('morgan');
