@@ -69,8 +69,11 @@ function configure(context, opts) {
 
 function installEngines(context, opts) {
   var engine = context.express.get('view engine');
-  if (engine) {
-    context.express.engines[`.${engine}`] = es6require(process.cwd(), 'node_modules', engine).__express;
+  if (engine && !context.express.engines[`.${engine}`]) {
+    const engineImpl = es6require(process.cwd(), 'node_modules', engine, { ignoreModuleNotFound: true });
+    if (engineImpl && engineImpl.__express) {
+      context.express.engines[`.${engine}`] = engineImpl.__express;
+    }
   }
 }
 
